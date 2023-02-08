@@ -1,0 +1,24 @@
+package aula01;
+
+import java.util.Scanner;
+
+public class CalculadoraIMC {
+
+	public static void main (String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Fale sua altura: ");
+		String alturaString = scanner.next();
+		System.out.println("Fale seu peso: ");
+		String pesoString = scanner.next();
+		
+		alturaString = alturaString.replace(",", ".");
+		pesoString = pesoString.replace(",", ".");
+		
+		Double altura = Double.parseDouble(alturaString);
+		Double peso = Double.parseDouble(pesoString);
+		
+		double imc = altura / Math.pow(peso, 2);
+		
+		System.out.println(imc);
+	}
+}

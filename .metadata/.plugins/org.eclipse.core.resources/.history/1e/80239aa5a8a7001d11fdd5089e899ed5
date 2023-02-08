@@ -1,0 +1,19 @@
+package aula01;
+
+public class Fibonacci {
+	
+	public static void main(String[] args) {
+		int numero1 = 0;
+		int numero2 = 1;
+		
+		int result = 0;
+		
+		
+		while (result < 100) {
+			System.out.println(result);
+			numero1 = numero2;
+			numero2 = result;
+			result = numero1 + numero2;
+		}
+	}
+}
