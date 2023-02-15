@@ -1,0 +1,14 @@
+package aula01;
+
+import java.util.Scanner;
+
+public class CalculadoraIMC {
+
+	public static void main (String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Fale sua altura: ");
+		double altura = scanner.nextDouble();
+		System.out.println("Fale seu peso: ");
+		double peso = scanner.nextDouble();
+	}
+}
